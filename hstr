@@ -1,0 +1,18 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+  command=$(cat ~/.bash_history | fzf)
+else
+  command=$(cat ~/.bash_history | fzf --query="$@")
+fi
+
+if [ "$command" = "" ]; then
+  exit
+fi
+
+if [ "$command" = "cancel" ]; then
+  exit
+fi
+
+read -e -i "$command" -p "Execute command: " command
+
+eval "$command"
