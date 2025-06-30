@@ -13,7 +13,8 @@ if [ "$command" = "cancel" ]; then
   exit
 fi
 
-read -e -i "$command" -p "Execute command: " command
+cout=""
+read -e -i "$command" -p "Execute command: " cout
 
-echo "$command" >> "$HOME/.bash_history"
-eval "$command"
+echo "$cout" >> "$HOME/.bash_history"
+eval "$cout"
