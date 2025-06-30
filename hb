@@ -1,8 +1,8 @@
 #!/bin/bash
 if [ $# -eq 0 ]; then
-  command=$(cat "$HOME/.bash_history" | fzf)
+  command=$(cat "$HOME/.bash_history" | fzf --layout=reverse)
 else
-  command=$(cat "$HOME/.bash_history" | fzf --query="$@")
+  command=$(cat "$HOME/.bash_history" | fzf --layout=reverse --query="$@")
 fi
 
 if [ "$command" = "" ]; then
