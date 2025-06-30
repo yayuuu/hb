@@ -1,4 +1,7 @@
 # hstr
+
+[![hstr demo](https://img.youtube.com/vi/WUqvfsHDNY0/0.jpg)](https://www.youtube.com/watch?v=WUqvfsHDNY0)
+
 Small CLI tool to search bash history and quickly repeat or edit command.
 Uses fzf to filter and select entries. Once you select the command, it lets you edit it before sending again.
 
