@@ -30,8 +30,8 @@ sudo zypper install fzf
 
 ## Installation:
 ```
-git clone https://github.com/yayuuu/hstr
-cd hstr
+git clone https://github.com/yayuuu/hb
+cd hb
 chmod +x install.sh
 ./install.sh
 ```
